@@ -4,13 +4,16 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "run": "playwright test"
+    "test": "npx playwright test"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
+  "devDependencies": {
+    "@playwright/test": "^1.20.1",
+    "playwright": "^1.20.1"
+  },
   "dependencies": {
-    "@playwright/test": "^1.20.0",
-    "playwright": "^1.20.0"
+    "webp-converter": "^2.3.3"
   }
 }
