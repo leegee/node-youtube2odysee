@@ -26,6 +26,10 @@ if (fs.existsSync('downloads/temp.mp4')) {
   videoFilepath = 'downloads/temp.mp4';
 } else if (fs.existsSync('downloads/temp.webm')) {
   videoFilepath = 'downloads/temp.webm';
+} else if (fs.existsSync('downloads/temp.mkv')) {
+  videoFilepath = 'downloads/temp.mkv';
+} else {
+  throw new Error("Found no video - downloads/temp.(mkv|webm|mp4)");
 }
 
 const title = json.fulltitle || json.title;
